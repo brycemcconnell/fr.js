@@ -8,7 +8,7 @@ const CONTROLS = {
 	ymove: true,
 	jump: true,
 	mouselock: true
-}
+};
 
 function initControls() {
 
