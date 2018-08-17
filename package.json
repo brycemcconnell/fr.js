@@ -7,10 +7,10 @@
     "init": "mkdir build",
     "test": "mocha test -u bdd -R spec",
     "pretest": "npm run lint && echo Lint complete.",
-    "lint": "jshint *.js **/*.js",
+    "lint": "jshint ./src/*.js",
     "clean": "rm -rf ./build",
     "prebuild": "npm run clean && npm run init",
-    "build": " cat ./src/*.js > ./build/fr.js",
+    "build": "cat ./src/*.js > ./build/fr.js",
     "minify": "babel ./build/fr.js -o ./build/fr.min.js",
     "postbuild": "npm run minify"
   },

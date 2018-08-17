@@ -26,12 +26,7 @@ function compareKey(key, order) {
 		return result * order;
 	};
 }
-function toRads(degrees) {
-	return degrees * (180/Math.PI);
-}
-function toDegs(radians) {
-	return radians * (Math.PI/180);
-}
+
 // Min max of range
 function normalize(val, max, min) {
 	return (val - min) / (max - min);
