@@ -1,18 +1,10 @@
 {
   "name": "fr",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Just some common functions",
-  "main": "",
+  "main": "index.mjs",
   "scripts": {
-    "init": "mkdir build",
-    "test": "mocha test -u bdd -R spec",
-    "pretest": "npm run lint && echo Lint complete.",
-    "lint": "jshint ./src/*.js",
-    "clean": "rm -rf ./build",
-    "prebuild": "npm run clean && npm run init",
-    "build": "cat ./src/*.js > ./build/fr.js",
-    "minify": "babel ./build/fr.js -o ./build/fr.min.js",
-    "postbuild": "npm run minify"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,12 +15,5 @@
   "bugs": {
     "url": "https://github.com/brycemcconnell/fr.js/issues"
   },
-  "homepage": "https://github.com/brycemcconnell/fr.js#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-minify": "^0.4.3",
-    "jshint": "^2.9.6",
-    "mocha": "^5.2.0",
-    "should": "^13.2.3"
-  }
+  "homepage": "https://github.com/brycemcconnell/fr.js#readme"
 }
