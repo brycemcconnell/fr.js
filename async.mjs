@@ -15,3 +15,13 @@ export const debounce = function(func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 };
+
+export const throttle = (func, timing = 1000) => {
+  let throttled;
+  return (...args) => {
+    if (!throttled) {
+      func(...args);
+      throttled = setTimeout(() => throttled = false, timing)
+    }
+  }
+}
