@@ -9,6 +9,7 @@ import * as number from './number.mjs';
 import * as object from './object.mjs';
 import * as string from './string.mjs';
 import * as vector from './vector.mjs';
+import * as fp from './fp.mjs';
 
 export default {
   array,
@@ -22,4 +23,5 @@ export default {
   object,
   string,
   vector,
+  fp,
 };
