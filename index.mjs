@@ -9,6 +9,7 @@ import * as number from './number.mjs';
 import * as object from './object.mjs';
 import * as string from './string.mjs';
 import * as storage from './storage.mjs';
+import * as url from './url.mjs';
 import * as vector from './vector.mjs';
 import * as fp from './fp.mjs';
 
@@ -24,6 +25,7 @@ export default {
   object,
   string,
   storage,
+  url,
   vector,
   fp,
 };
