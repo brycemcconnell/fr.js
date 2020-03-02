@@ -25,3 +25,13 @@ export const throttle = (func, timing = 1000) => {
     }
   }
 }
+
+export const onLoad = (callback) => {
+  if (document.readyState === 'complete') {
+    callback();
+  } else {
+    window.addEventListener('load', () => {
+      callback();
+    });
+  }
+};
